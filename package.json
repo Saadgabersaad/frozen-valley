@@ -1,12 +1,14 @@
 {
   "name": "frozenvalley",
   "version": "0.1.0",
-  "homepage": "https://github.com/Saadgabersaad/frozen-valley.git",
+  "homepage": "https://Saadgabersaad.github.io/test1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build && node fixPaths.mjs",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mui/icons-material": "^7.2.0",
