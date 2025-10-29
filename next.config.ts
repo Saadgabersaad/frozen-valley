@@ -6,8 +6,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: '',
-    assetPrefix: '',
+    assetPrefix: '/frozen-valley/',  // ✅ this line — matches your repo name
 };
 
 export default nextConfig;
