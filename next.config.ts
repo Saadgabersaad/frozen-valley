@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
     output: 'export',
+    images: { unoptimized: true },
+    basePath: '/frozen-valley',       // 👈 MUST match your GitHub repo name
+    assetPrefix: '/frozen-valley/',   // 👈 MUST end with a slash
     trailingSlash: true,
-    images: {
-        unoptimized: true,
-    },
-    assetPrefix: '/frozen-valley/',  // ✅ this line — matches your repo name
 };
 
 export default nextConfig;
